@@ -2,7 +2,7 @@ diff --git a/src/DockContainerWidget.h b/src/DockContainerWidget.h
 index 06ea710..5f4e668 100644
 --- a/src/DockContainerWidget.h
 +++ b/src/DockContainerWidget.h
-@@ -107,7 +107,7 @@ protected:
+@@ -110,7 +110,7 @@ protected:
  	/**
  	 * Adds the given dock area to this container widget
  	 */
