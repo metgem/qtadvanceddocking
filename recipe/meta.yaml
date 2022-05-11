@@ -15,7 +15,6 @@ build:
 
 requirements:
   build:
-    - python
     - cmake>=3.5
     - {{ compiler('cxx') }}
     - make                               # [not win]

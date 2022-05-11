@@ -13,7 +13,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: [3.8, 3.9]
         os: [ubuntu-latest, windows-latest, macos-latest]
       fail-fast: false
 
@@ -27,13 +26,12 @@ jobs:
       with:
         path: ~/conda_pkgs_dir
         key: ${{ runner.os }}-${{ env.CACHE_NUMBER }}
-    - name: Set up Python ${{ matrix.python-version }} (Miniconda)
+    - name: Set up Miniconda
       uses: conda-incubator/setup-miniconda@v2
       with:
         activate-environment: tests
         use-only-tar-bz2: true
         auto-update-conda: true
-        python-version: ${{ matrix.python-version }}
         channels: conda-forge
     - name: Conda info
       shell: bash -l {0}
@@ -54,4 +52,4 @@ jobs:
     - name: Build
       shell: bash -l {0}
       run: |
-        conda build recipe --python ${{ matrix.python-version }}
+        conda build recipe
