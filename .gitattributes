@@ -4,6 +4,9 @@
 
 # Force the following filetypes to have unix eols, so Windows does not break them
 *.* text eol=lf
+meta.yaml text eol=lf
+build.sh text eol=lf
+bld.bat text eol=crlf
 
 # Windows forced line-endings
 *.patch binary
