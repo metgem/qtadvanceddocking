@@ -21,6 +21,7 @@ requirements:
     - make                               # [not win]
     - ninja                              # [win]
     - gxx                                # [linux]
+    - mesalib                            # [unix]
 
   host:
     - qt
