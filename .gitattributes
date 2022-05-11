@@ -6,4 +6,5 @@
 *.* text eol=lf
 
 # Windows forced line-endings
-/recipe/*.patch text eol=crlf
+*.patch binary
+*.diff  binary
