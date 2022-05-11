@@ -6,4 +6,4 @@
 *.* text eol=lf
 
 # Windows forced line-endings
-/recipe/* text eol=crlf
+/recipe/*.patch text eol=crlf
