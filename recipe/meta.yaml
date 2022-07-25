@@ -11,7 +11,7 @@ source:
     - 0001-CDockContainerWidget.patch
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -23,7 +23,7 @@ requirements:
     - mesalib                            # [unix]
 
   host:
-    - qt
+    - qt-main
     
 test:
   commands:
